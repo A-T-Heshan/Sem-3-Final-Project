@@ -1,7 +1,7 @@
 <?php
 include_once "../Base/header.php";
 ?>
-<link rel="stylesheet" href="../../css/HomePage/homePage.css">
+<link rel="stylesheet" href="../../css/HomePage/homepage.css">
 <h2 id="services-header">Services</h2>
 <div class="flex-container-1">
     <div class="flex-left-1">
@@ -31,7 +31,9 @@ include_once "../Base/header.php";
         <img src="../../images/HomePage/channel-doctor.png" alt="" width="100%">
     </div>
 </div>
-
+<form action="../Base/logout.php" method="post">
+    <button type="submit" name="logout" >logout</button>
+</form>
 <?php
-    include_once "../Base/footer.php";
+include_once "../Base/footer.php";
 ?>

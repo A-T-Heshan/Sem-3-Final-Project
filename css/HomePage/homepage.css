@@ -1,0 +1,231 @@
+* {
+    padding: 0px;
+    margin: 0;
+    font-family: Arial;
+}
+
+img:hover {
+    transform: translateY(10px);
+    transition: .7s;
+    cursor: pointer;
+    border-radius: 100%;
+}
+
+.flex-container-1 {
+    margin-top: 10px;
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.flex-left-1 {
+    flex: 10%;
+}
+
+.flex-right-1 {
+    flex: 70%;
+}
+
+.flex-container-2 {
+    margin-top: 0px;
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.flex-left-2 {
+    flex: 70%;
+}
+
+.flex-right-2 {
+    flex: 10%;
+}
+
+h2#services-header {
+    margin-top: 20px;
+    font-size: 30px;
+    width: device-width;
+    cursor: default;
+    padding: 20px;
+    color: black;
+    background-color: #4BE351;
+}
+
+
+
+h3#header-1 {
+    color: #4BE351;
+    width: fit-content;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-left: 40px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+h3#header-1:hover {
+    background-color: #4BE351;
+    padding-left: 50px;
+    border-radius: 0px 40px 40px 0px;
+    transform: translateX(30px);
+    color: white;
+    cursor: pointer;
+    transition: 1s;
+    color: black;
+}
+
+h4#vaccination-info-1 {
+    margin-top: 50px;
+    font-size: 25px;
+    margin-left: 100px;
+    text-align: justify;
+}
+
+h4#vaccination-info-1:hover {
+    cursor: default;
+}
+
+h4#vaccination-info-2:hover {
+    cursor: default;
+}
+
+h3#header-2 {
+    padding: 20px;
+    text-align: right;
+    margin-right: 40px;
+    color: #4BE351;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+h3#header-2 span {
+
+    padding: 20px;
+}
+
+h3#header-2:hover span {
+
+    padding: 20px;
+    background-color: #4BE351;
+    padding-right: 50px;
+    border-radius: 40px 0px 0px 40px;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+    color: black;
+}
+
+h3#header-2:hover {
+    transform: translateX(-30px);
+    color: white;
+    cursor: pointer;
+    transition: 1s;
+    color: black;
+}
+
+h4#vaccination-info-2 {
+    margin-top: 50px;
+    font-size: 25px;
+    margin-right: 100px;
+    margin-left: 10px;
+    text-align: justify;
+}
+
+
+@media screen and (max-width: 910px) {
+    .flex-container-1 {
+        margin-top: 10px;
+        display: flex;
+        margin-left: 0px;
+        margin-right: 0px;
+        height: max-content;
+    }
+
+    .flex-left-1 {
+        flex: 20%;
+        width: 30%;
+    }
+
+    .flex-right-1 {
+        flex: 80%;
+        width: 100%;
+    }
+
+
+    .flex-container-2 {
+        margin-top: 20px;
+        display: flex;
+        margin-left: 0px;
+        margin-right: 0px;
+        height: max-content;
+    }
+
+    .flex-right-2 {
+        flex: 20%;
+        width: 30%;
+    }
+
+    .flex-left-2 {
+        flex: 80%;
+        width: 100%;
+    }
+
+
+    h3#header-1 {
+        color: #4BE351;
+        font-size: 20px;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    h3#header-2 {
+        color: #4BE351;
+        font-size: 20px;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    h4#vaccination-info-1 {
+        margin-top: 0px;
+        font-size: 12px;
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: justify;
+    }
+
+    h4#vaccination-info-2 {
+        margin-top: 0px;
+        font-size: 12px;
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: justify;
+    }
+
+
+
+    h2#services-header {
+        margin-top: 0px;
+        font-size: 20px;
+        width: device-width;
+        cursor: default;
+        padding: 5px;
+        color: black;
+        background-color: #4BE351;
+    }
+
+    h3#header-2:hover span {
+        padding: 10px; 
+        padding-right: 20px; 
+    }
+    h3#header-1 {
+        padding: 10px;  
+    }
+    h3#header-2 {
+        padding: 10px;   
+    }
+    h3#header-1:hover {
+        padding: 10px; 
+        padding-left: 20px; 
+    }
+}
