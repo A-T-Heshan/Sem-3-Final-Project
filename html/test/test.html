@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <h1 id="ts"></h1>
+    <script>
+        var text = ['one', 'two', 'three'];
+        var index = 0;
+
+        function printText() {
+            document.getElementById('ts').innerHTML = text[index];
+            if(index == text.length -1){
+                index = -1;
+            }
+            index++;
+
+            // Call the function again after 3 seconds
+            setTimeout(printText, 1000);
+        }
+
+        // Start the loop
+        printText();
+    </script>
+</body>
+
+</html>

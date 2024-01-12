@@ -6,7 +6,9 @@ if (isset($_POST["submit"])) {
     $userName = $_POST["username"];
     $password = $_POST["password"];
     require_once '../dbConnection/connectDB.php';
-
+    if (strpos($userName,'@') && strpos($userName,'.')) {
+        $userName = strtolower($userName);
+    }
     loginUser($conn, $userName, $password);
 } else {
     header('Location:../../html/loginPage/login.php');
@@ -15,18 +17,15 @@ if (isset($_POST["submit"])) {
 
 function loginUser($conn, $userName, $password)
 {
-    $sql = "SELECT userName
-    FROM user_accounts
-    WHERE ('$userName' = userName && '$password' = password)";
+    $sql = "SELECT user_name,email
+    FROM user
+    WHERE (('$userName' = user_name OR '$userName' = email) AND '$password' = password)";
 
     $result = $conn->query($sql);
     if ($result->num_rows > 0) {
         while ($row = $result->fetch_assoc()) {
-            $_SESSION["username"] = $row["userName"];
+            $_SESSION["username"] = $row["user_name"];
             header("Location:../../html/HomePage/homepage.php");
-            echo '<script>
-                    document.getElementById("loginMessage").innerText = "Login successful...";
-                 </script>';
             exit();
         }
     } else {

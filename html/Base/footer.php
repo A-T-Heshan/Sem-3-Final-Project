@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="../../css/Base/template.css">
+<link rel="stylesheet" href="../../css/Base/templateHeaderFooter.css">
 <footer>
     <table id="nav">
         <tr>
@@ -11,7 +11,7 @@
         </tr>
         <tr>
             <td><a href="#vaccination_track">Track Vaccination</a></td>
-            <td><a href="#vaccination_track">FAQ</a></td>
+            <td><a href="../FAQ/FAQ.php">FAQ</a></td>
         </tr>
         <tr>
             <td><a href="#Veterinaries">Veterinaries</a></td>
@@ -20,7 +20,7 @@
         <tr>
             <td> </td>
 
-            <td><a href="#contactUS">Contact US</a></td>
+            <td><a href="../contactUS/contactUS.php">Contact US</a></td>
         </tr>
     </table>
     <table id="footer-follow-us" style="border: 0px;">
